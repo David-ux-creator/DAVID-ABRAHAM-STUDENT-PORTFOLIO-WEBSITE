@@ -25,7 +25,7 @@
   --color-accent-teal-soft: #17d9c422;
   --color-danger: #ff5470;
   --color-success: #17d9c4;
-
+   
   --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
   --font-body: 'Inter', 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', 'Consolas', monospace;
@@ -242,6 +242,16 @@ input, textarea{ font-family: inherit; }
 
 .reveal{ opacity: 0; transform: translateY(18px); transition: opacity 700ms ease, transform 700ms ease; }
 .reveal.is-visible{ opacity: 1; transform: translateY(0); }
+
+.avatar-photo{
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-accent-teal);
+  margin: 0 auto 18px;
+  display: block;
+}
 
 /* ---------- Avatar placeholder ---------- */
 .avatar-placeholder{
