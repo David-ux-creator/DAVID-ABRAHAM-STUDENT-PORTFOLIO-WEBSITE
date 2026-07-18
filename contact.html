@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — David Abraham</title>
+<meta name="description" content="Get in touch with David Abraham — Cybersecurity student and visual identity designer based in Ikorodu, Lagos.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Primary navigation">
+    <a href="index.html" class="logo">david<span class="accent">@</span>miva<span class="prompt">:~$</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="planner.html">planner</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-header container reveal">
+    <p class="eyebrow">// contact</p>
+    <h1>Let's talk.</h1>
+    <p class="section-lede">Whether it's about a project, a collaboration, or just to say hi — send a message and I'll get back to you.</p>
+  </section>
+
+  <section class="section container">
+    <div class="contact-grid">
+
+      <div class="reveal">
+        <h2 style="font-size: 1.3rem;">Contact details</h2>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <span class="contact-info-icon">✉</span>
+            <div>
+              <h4>Email</h4>
+              <p>davidkuforiji76@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">☎</span>
+            <div>
+              <h4>Phone</h4>
+              <p>+234 913 164 0660</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">📍</span>
+            <div>
+              <h4>Location</h4>
+              <p>Ikorodu, Lagos, Nigeria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <form id="contactForm" class="form" novalidate>
+          <div class="field" id="nameField">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name">
+            <span class="field-error" id="nameError"></span>
+          </div>
+
+          <div class="field" id="emailField">
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email" placeholder="name@example.com">
+            <span class="field-error" id="emailError"></span>
+          </div>
+
+          <div class="field" id="phoneField">
+            <label for="phone">Phone number</label>
+            <input type="text" id="phone" name="phone" placeholder="Digits only, e.g. 09131640660">
+            <span class="field-error" id="phoneError"></span>
+          </div>
+
+          <div class="field" id="messageField">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What would you like to say?"></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-success" id="formSuccess" role="status"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p class="footer-brand">David Abraham <span class="dim">// Cybersecurity Student &amp; Visual Designer</span></p>
+    <ul class="footer-contact">
+      <li>Ikorodu, Lagos, Nigeria</li>
+      <li>davidkuforiji76@gmail.com</li>
+      <li>+234 913 164 0660</li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 David Abraham. Built with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
