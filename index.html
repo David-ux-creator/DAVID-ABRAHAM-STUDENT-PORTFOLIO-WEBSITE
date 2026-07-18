@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Abraham — Cybersecurity Student &amp; Visual Designer</title>
+<meta name="description" content="David Abraham is a Cybersecurity student at Miva Open University and a visual identity designer based in Lagos, Nigeria.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER / NAVIGATION ============ -->
+<header class="site-header">
+  <nav class="navbar" aria-label="Primary navigation">
+    <a href="index.html" class="logo">david<span class="accent">@</span>miva<span class="prompt">:~$</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="planner.html">planner</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero container">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">100-level Computer Science // Cybersecurity track</p>
+      <h1>Hi, I'm <span class="highlight">David Abraham</span>.<br>I secure systems and design identities.</h1>
+      <p class="section-lede">
+        I am a 100-level Computer Science student at Miva Open University with a strong interest in
+        Cyber Security. I enjoy building websites, learning programming, attending cybersecurity
+        webinars, and solving real-world problems. Beyond academics, I work as a Visual Identity
+        Designer, creating visuals for brands, individuals, and organisations.
+      </p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">View my projects</a>
+        <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <!-- Signature element: an animated terminal "boot" sequence -->
+    <div class="terminal reveal" aria-hidden="false">
+      <div class="terminal-bar">
+        <span></span><span></span><span></span>
+        <span class="terminal-title">david@miva — bash</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+  </section>
+
+  <!-- ============ AVATAR + BIO EXCERPT ============ -->
+  <section class="section-tight container">
+    <div class="grid" style="grid-template-columns: 220px 1fr; gap: 40px; align-items: center;">
+      <div class="reveal">
+        <!-- Placeholder avatar — David, replace this block with an <img> of your own photo -->
+        <div class="avatar-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"></path>
+          </svg>
+          <span>Replace with<br>your photo</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">// about this site</p>
+        <h2 class="section-title">A student portfolio built to be lived in.</h2>
+        <p>
+          This site tracks who I am, what I'm building, and what I'm learning as a Computer Science
+          student focused on Cybersecurity at Miva Open University. It also doubles as a small
+          academic tool — the <a href="planner.html" style="color: var(--color-accent-teal);">planner page</a>
+          helps me keep track of coursework and deadlines.
+        </p>
+        <p>I believe in continuous learning, personal development, and using technology to create purposeful solutions.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p class="footer-brand">David Abraham <span class="dim">// Cybersecurity Student &amp; Visual Designer</span></p>
+    <ul class="footer-contact">
+      <li>Ikorodu, Lagos, Nigeria</li>
+      <li>davidkuforiji76@gmail.com</li>
+      <li>+234 913 164 0660</li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 David Abraham. Built with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
