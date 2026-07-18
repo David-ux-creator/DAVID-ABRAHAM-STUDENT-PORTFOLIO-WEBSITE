@@ -25,7 +25,7 @@
   --color-accent-teal-soft: #17d9c422;
   --color-danger: #ff5470;
   --color-success: #17d9c4;
-   
+
   --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
   --font-body: 'Inter', 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', 'Consolas', monospace;
@@ -243,16 +243,6 @@ input, textarea{ font-family: inherit; }
 .reveal{ opacity: 0; transform: translateY(18px); transition: opacity 700ms ease, transform 700ms ease; }
 .reveal.is-visible{ opacity: 1; transform: translateY(0); }
 
-.avatar-photo{
-  width: 168px;
-  height: 168px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--color-accent-teal);
-  margin: 0 auto 18px;
-  display: block;
-}
-
 /* ---------- Avatar placeholder ---------- */
 .avatar-placeholder{
   width: 168px;
@@ -272,6 +262,18 @@ input, textarea{ font-family: inherit; }
   margin: 0 auto 18px;
 }
 .avatar-placeholder svg{ width: 52px; height: 52px; color: var(--color-accent-teal); opacity: .8; }
+
+/* Real profile photo — used once the placeholder above is replaced with an <img> */
+.avatar-photo{
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-accent-teal);
+  box-shadow: 0 0 0 6px var(--color-bg-elevated);
+  margin: 0 auto 18px;
+  display: block;
+}
 
 /* ---------- Cards / grid ---------- */
 .grid{ display: grid; gap: 24px; }
@@ -533,13 +535,4 @@ tbody tr:hover{ background: var(--color-surface-2); }
 .footer-brand{ font-family: var(--font-display); font-weight: 600; color: var(--color-text); margin: 0; }
 .footer-brand .dim{ font-family: var(--font-mono); font-weight: 400; color: var(--color-text-dim); font-size: 0.85rem; }
 .footer-contact{ display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; font-family: var(--font-mono); font-size: 0.82rem; color: var(--color-text-muted); }
-.footer-copy{ font-size: 0.78rem; color: var(--color-text-dim); margin: 0; }
-
-/* ---------- Page header (non-home pages) ---------- */
-.page-header{ padding: 56px 0 20px; }
-.page-header h1{ font-size: clamp(1.8rem, 4vw, 2.6rem); }
-
-/* ---------- Responsive ---------- */
-@media (max-width: 900px){
-  .hero{ grid-template-columns: 1fr; }
-  .grid-3{ grid
+.footer-copy{ font-size: 0.78rem; co
