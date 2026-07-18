@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Planner — David Abraham</title>
+<meta name="description" content="David Abraham's interactive academic task planner for tracking coursework and deadlines.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Primary navigation">
+    <a href="index.html" class="logo">david<span class="accent">@</span>miva<span class="prompt">:~$</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="planner.html">planner</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-header container reveal">
+    <p class="eyebrow">// academic planner</p>
+    <h1>Keep coursework in one place.</h1>
+    <p class="section-lede">Add tasks, check them off as you finish, and delete what's done. Everything is saved in this browser, so your list is still here next time you visit.</p>
+  </section>
+
+  <section class="section container">
+    <div class="planner-panel reveal" style="max-width: 640px; margin: 0 auto;">
+
+      <form id="plannerForm" class="planner-input-row">
+        <label for="taskInput" class="visually-hidden">New task</label>
+        <input type="text" id="taskInput" placeholder="e.g. Finish COS 106 assignment" autocomplete="off" required>
+        <button type="submit" class="btn btn-primary">Add task</button>
+      </form>
+
+      <div class="planner-meta">
+        <span id="taskCount"><span class="num">0</span> tasks remaining</span>
+        <div class="planner-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+      </div>
+
+      <ul class="task-list" id="taskList"></ul>
+      <p class="planner-empty" id="plannerEmpty">No tasks yet — add your first one above.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p class="footer-brand">David Abraham <span class="dim">// Cybersecurity Student &amp; Visual Designer</span></p>
+    <ul class="footer-contact">
+      <li>Ikorodu, Lagos, Nigeria</li>
+      <li>davidkuforiji76@gmail.com</li>
+      <li>+234 913 164 0660</li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 David Abraham. Built with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
